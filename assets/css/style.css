@@ -1,0 +1,183 @@
+    @font-face {
+        font-family: 'Vazir';
+        src: url('../font/Vazirmatn-Light.woff2')
+    }
+
+    body {
+        font-family: 'Vazir';
+        background-color: #0e0e10;
+        color: #e9ecef;
+        line-height: 1.6;
+        direction: rtl;
+        text-align: right;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 5%;
+        background: rgba(20, 20, 25, 0.85);
+        backdrop-filter: blur(8px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .cta {
+        padding: 0.7rem 1.5rem;
+        background: linear-gradient(90deg, #8b5cf6, #6366f1);
+        color: white;
+        border: none;
+        border-radius: 50px;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: opacity 0.3s;
+        font-family: 'Vazir';
+    }
+
+    .cta:hover {
+        opacity: 0.85;
+    }
+
+    .logo {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 6rem 10%;
+        flex-wrap: wrap;
+        gap: 3rem;
+    }
+
+    .hero-text {
+        flex: 1;
+        min-width: 280px;
+    }
+
+    .hero-text h1 {
+        font-size: 3rem;
+        line-height: 1.2;
+        margin-bottom: 1.5rem;
+        color: #fff;
+    }
+
+    .hero-text p {
+        font-size: 1.1rem;
+        color: #b0b3c0;
+        margin-bottom: 2rem;
+    }
+
+    .hero-text .buttons {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero-text .buttons a {
+        text-decoration: none;
+        background: linear-gradient(90deg, #6366f1, #3b82f6);
+        color: white;
+        padding: 0.9rem 1.8rem;
+        border-radius: 50px;
+        font-weight: 500;
+        transition: transform 0.3s, opacity 0.3s;
+    }
+
+    .buttons a:last-child {
+        background: linear-gradient(90deg, #8b5cf6, #6366f1);
+    }
+
+    .hero-text .buttons a:hover {
+        transform: translateY(-3px);
+        opacity: 0.9;
+    }
+
+    .hero-img {
+        flex: 1;
+        min-width: 300px;
+        text-align: center;
+    }
+
+    .hero-img img {
+        max-width: 85%;
+        border-radius: 25px;
+        box-shadow: 0 15px 60px rgba(99, 102, 241, 0.25);
+    }
+
+    .features {
+        text-align: center;
+        padding: 6rem 5%;
+        background-color: #141416;
+    }
+
+    .features h2 {
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+        color: #fff;
+    }
+
+    .feature-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 2.5rem;
+    }
+
+    .feature {
+        background: #1c1c20;
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 25px rgba(99, 102, 241, 0.3);
+    }
+
+    .feature img {
+        width: 100%;
+        border-radius: 12px;
+        margin-bottom: 1rem;
+    }
+
+    .feature h3 {
+        color: #fff;
+        margin-bottom: 0.5rem;
+    }
+
+    .feature p {
+        color: #b0b3c0;
+    }
+
+    footer {
+        text-align: center;
+        padding: 3rem 1rem;
+        background: #0e0e10;
+        color: #aaa;
+        font-size: 0.9rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    @media (max-width: 768px) {
+        .hero {
+            flex-direction: column-reverse;
+            text-align: center;
+            padding: 4rem 8%;
+        }
+
+        .hero-text h1 {
+            font-size: 1.5rem;
+        }
+    }
